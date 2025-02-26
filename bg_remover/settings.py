@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-t6ncrvm5!4k&z)qnuy)tl-hh90u10gi8=749eamnwg8ddyeliw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =  []
+ALLOWED_HOSTS =  [
+    '127.0.0.1',
+    'localhost',
+    'backgroundremover-production-de6f.up.railway.app',
+]
 
 
 # Application definition
