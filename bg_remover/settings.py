@@ -25,11 +25,7 @@ SECRET_KEY = 'django-insecure-t6ncrvm5!4k&z)qnuy)tl-hh90u10gi8=749eamnwg8ddyeliw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =  [
-    '127.0.0.1',
-    'localhost',
-    'backgroundremover-production-de6f.up.railway.app',
-]
+ALLOWED_HOSTS =  ['background-remover-3vt2.onrender.com','localhost','127.0.0.1']
 
 
 # Application definition
@@ -54,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'bg_remover.urls'
@@ -135,7 +132,3 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://backgroundremover-production-de6f.up.railway.app'
-]
